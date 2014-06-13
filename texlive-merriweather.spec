@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-merriweather
 Version:	20131114
-Release:	5
+Release:	6
 Summary:	Merriweather and MerriweatherSans fonts, with LaTeX support
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/merriweather
