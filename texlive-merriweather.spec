@@ -1,6 +1,6 @@
 Name:		texlive-merriweather
 Version:	20180303
-Release:	1
+Release:	2
 Summary:	Merriweather and MerriweatherSans fonts, with LaTeX support
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/merriweather
