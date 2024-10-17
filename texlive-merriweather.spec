@@ -3,7 +3,7 @@ Version:	64452
 Release:	2
 Summary:	Merriweather and MerriweatherSans fonts, with LaTeX support
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/merriweather
+URL:		https://www.ctan.org/tex-archive/fonts/merriweather
 License:	OFL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/merriweather.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/merriweather.doc.r%{version}.tar.xz
