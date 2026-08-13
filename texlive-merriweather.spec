@@ -12,7 +12,8 @@ Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/merriweather.r%{
 Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/merriweather.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
 BuildSystem:	texlive
-Provides:	texlive(%{tl_name}) = %{tl_revision}
+Requires:	texlive-tlpkg
+Provides:	texlive(%{tl_name}) = %{version}
 
 %description
 This package provides the Merriweather and MerriweatherSans families of
@@ -22,3 +23,10 @@ slightly condensed letterforms, a mild diagonal stress, sturdy serifs
 and open forms. The Sans family closely harmonizes with the weights and
 styles of the serif family. There are four weights and italics for each.
 
+
+%install -a
+mkdir -p %{buildroot}%{_texmf_updmap_d}
+cat > %{buildroot}%{_texmf_updmap_d}/%{tl_name} <<'TL_DROPIN_EOF'
+# from merriweather:
+Map merriweather.map
+TL_DROPIN_EOF
